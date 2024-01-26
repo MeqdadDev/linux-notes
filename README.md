@@ -6,6 +6,10 @@ Notes and Resources for Linux OS.
 
 ## Popular Commands
 
+-------------------------------
+
+### `uptime`
+
 * __`uptime`__ - Tell how long the system has been running.
 
 __Usage Case:__
@@ -21,6 +25,8 @@ _Output:_
 ```
 
 -------------------------------
+
+### `free`
 
 * __`free`__ - Display amount of free and used memory in the system.
 
@@ -39,6 +45,8 @@ Swap:        2097148     1104344      992804
 ```
 
 -------------------------------
+
+### `date`
 
 * __`date`__ - print or set the system date and time.
 
@@ -67,6 +75,8 @@ _Output:_
 ```
 
 -------------------------------
+
+### `head`
 
 * __`head`__ - output the first part of files. (10 lines)
 
@@ -109,6 +119,8 @@ Line 5
 
 -------------------------------
 
+### `tail`
+
 * __`tail`__ - output the last part of files. (10 lines)
 
 __Usage Case:__
@@ -148,3 +160,60 @@ Line 3
 Line 4
 Line 5
 ```
+
+-------------------------------
+
+### `history`
+
+* __`history`__ - display a list of previously executed commands in a terminal session. It shows a numbered list of commands along with their execution sequence. This command is particularly useful for reviewing and reusing commands from your command-line history.
+
+__Usage Case:__
+
+```bash
+history
+```
+
+_Output:_
+
+```bash
+....
+....
+....
+ 1152  sudo apt-get update
+ 1153  sudo apt-get upgrade
+ 1154  dmesg
+ 1155  sudo dmesg
+ 1156  cd Desktop/
+ 1157  cd Tmp/
+ 1158  ls
+ 1159  mkdir Meqdad
+ 1160  ls
+ 1161  cd Meqdad/
+ 1162  ls
+ 1163  sudo code .
+ 1164  ls
+ 1165  touch hi.txt
+ 1166  python3
+ 1167  python --version
+....
+....
+....
+```
+
+* __`!<command_id>`__ - Rerun a specific command from history by using an exclamation mark (!) followed by the line number.
+
+Running `ls` command from history (line 1164):
+
+```bash
+!1164
+```
+
+_Output:_
+
+```bash
+LICENSE  README.md  hi.txt
+```
+
+-------------------------------
+
+touch....
