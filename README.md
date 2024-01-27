@@ -216,4 +216,28 @@ LICENSE  README.md  hi.txt
 
 -------------------------------
 
-touch....
+### `touch`
+
+* __`touch`__ - Create new empty files or update the timestamp of existing files. When used to create a new file, it's followed by the name of the file you want to create.
+
+__Usage Case:__
+
+```bash
+touch example.txt
+```
+
+-------------------------------
+
+### `man`
+
+* __`man`__ - Stands for "manual". It's used to display the manual pages for other commands installed on your system. These manual pages provide detailed information about commands, their options, syntax, and often include examples and explanations.
+
+```bash
+man <command_name>
+```
+
+__Usage Case:__
+
+```bash
+man ls
+```
