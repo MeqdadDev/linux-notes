@@ -241,3 +241,53 @@ __Usage Case:__
 ```bash
 man ls
 ```
+
+-------------------------------
+
+### `id`
+
+* __`id`__ - To display the user and group identifiers associated with the current user or a specified username. It provides information about the user's UID (User Identifier), GID (Group Identifier), and supplementary group IDs.
+
+```bash
+id [username]
+```
+
+__Usage Case:__
+
+```bash
+id meqdad
+```
+
+_Output:_
+
+```bash
+uid=1000(meqdad) gid=1000(meqdad) groups=1000(meqdad),4(adm),20(dialout),24(cdrom),27(sudo),30(dip),46(plugdev),122(lpadmin),135(lxd),136(sambashare)
+```
+
+Running `id` command the root user:
+ 
+```bash
+id root
+```
+
+_Output:_
+
+```bash
+uid=0(root) gid=0(root) groups=0(root)
+```
+
+* __`id`__ - When you run the `id` command without specifying a username, it displays information about the current user.
+
+Running `id` command the current user (`meqdad`):
+
+```bash
+id
+```
+
+_Output:_
+
+```bash
+uid=1000(meqdad) gid=1000(meqdad) groups=1000(meqdad),4(adm),20(dialout),24(cdrom),27(sudo),30(dip),46(plugdev),122(lpadmin),135(lxd),136(sambashare)
+```
+
+-------------------------------
