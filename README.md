@@ -291,3 +291,37 @@ uid=1000(meqdad) gid=1000(meqdad) groups=1000(meqdad),4(adm),20(dialout),24(cdro
 ```
 
 -------------------------------
+
+### `useradd`
+
+* __`useradd`__ - Create a new user account.
+
+```bash
+useradd [options] [User_name]
+```
+
+__Usage Case:__
+
+```bash
+sudo useradd test_user
+```
+
+_Output:_
+
+```bash
+A new user account "meqdad" is created.
+```
+
+* __`sudo useradd -d [home_dir_path] [new_user]`__ - To give a home directory path for new users.
+
+```bash
+sudo useradd -d /home/test_user test_user
+```
+
+_Output:_
+
+```bash
+A new user account "test_user" is created and the Home directory is created.
+```
+
+-------------------------------
