@@ -303,7 +303,7 @@ useradd [options] [User_name]
 __Usage Case:__
 
 ```bash
-sudo useradd test_user
+sudo useradd meqdad
 ```
 
 _Output:_
@@ -322,6 +322,28 @@ _Output:_
 
 ```bash
 A new user account "test_user" is created and the Home directory is created.
+```
+
+-------------------------------
+
+### `userdel`
+
+* __`userdel`__ - Delete a user account.
+
+```bash
+userdel [options] [User_name]
+```
+
+__Usage Case:__
+
+```bash
+sudo userdel meqdad
+```
+
+_Output:_
+
+```bash
+The user account "meqdad" is deleted.
 ```
 
 -------------------------------
