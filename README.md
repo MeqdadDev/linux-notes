@@ -347,3 +347,25 @@ The user account "meqdad" is deleted.
 ```
 
 -------------------------------
+
+### `groupadd`
+
+* __`groupadd`__ - Create a new group.
+
+```bash
+groupadd [options] [group_name]
+```
+
+__Usage Case:__
+
+```bash
+sudo groupadd test_group
+```
+
+_Output:_
+
+```bash
+A new group "test_group" is created.
+```
+
+-------------------------------
