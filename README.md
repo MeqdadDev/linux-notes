@@ -369,3 +369,48 @@ A new group "test_group" is created.
 ```
 
 -------------------------------
+
+### `cat /etc/passwd`
+
+* __`cat /etc/passwd`__ - Display user account information.
+
+
+__Usage Case:__
+
+```bash
+cat /etc/passwd
+```
+
+OR
+
+```bash
+vim /etc/passwd
+```
+
+_Output:_
+
+```bash
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+...
+...
+...
+```
+
+__Explanation of Output:__
+
+Username (Login Name): daemon - This is the username or login name of the user account.
+
+Password Placeholder: x - In modern Unix-like operating systems, the actual encrypted password is stored in the /etc/shadow file for security reasons. This placeholder (x) indicates that the password is stored in /etc/shadow.
+
+User ID (UID): 1 - This is the user's unique numerical identifier. User IDs 0-99 are typically reserved for system users and services.
+
+Group ID (GID): 1 - This is the primary group ID of the user. In this case, both the user ID and the group ID are 1, which is often the case for system-related accounts.
+
+User Information: daemon - This field typically contains additional information about the user, such as the full name or description. In this example, it's the same as the username.
+
+Home Directory: /usr/sbin - This is the path to the user's home directory. For system accounts like daemon, this might be set to a directory related to the system's operation.
+
+Login Shell: /usr/sbin/nologin - This is the path to the user's login shell. If the user is not intended to log in interactively, a shell like /usr/sbin/nologin is used to prevent login.
+
+-------------------------------
