@@ -414,3 +414,29 @@ Home Directory: /usr/sbin - This is the path to the user's home directory. For s
 Login Shell: /usr/sbin/nologin - This is the path to the user's login shell. If the user is not intended to log in interactively, a shell like /usr/sbin/nologin is used to prevent login.
 
 -------------------------------
+
+### `passwd [username]`
+
+* __`passwd [username]`__ - Change or set the password for a user account.
+
+```bash
+passwd [username]
+```
+
+__Usage Case:__
+
+```bash
+passwd meqdad
+```
+
+_Output:_
+
+```bash
+Changing password for user meqdad.
+New password:
+Retype new password:
+passwd: password updated successfully
+```
+
+-------------------------------
+
