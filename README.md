@@ -440,3 +440,46 @@ passwd: password updated successfully
 
 -------------------------------
 
+### `usermod`
+
+* __`usermod`__ - Modify user account settings.
+
+__Usage Case:__
+
+* Changing the login shell for user "meqdad" to `/bin/zsh`.
+
+```bash
+sudo usermod -s /bin/zsh meqdad
+```
+
+_Output:_
+
+```bash
+The login shell for user "meqdad" is changed to "/bin/zsh".
+```
+
+* Adding user "meqdad" to the "admin" group.
+
+```bash
+sudo usermod -G admin meqdad
+```
+
+_Output:_
+
+```bash
+User "meqdad" is added to the "admin" group.
+```
+
+* Adding a comment for user "meqdad".
+
+```bash
+sudo usermod -c "Meqdad Dev" meqdad
+```
+
+_Output:_
+
+```bash
+The comment for user "meqdad" is updated to "Meqdad Dev".
+```
+
+-------------------------------
