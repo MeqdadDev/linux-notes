@@ -483,3 +483,48 @@ The comment for user "meqdad" is updated to "Meqdad Dev".
 ```
 
 -------------------------------
+
+
+### `chage`
+
+* __`chage`__ - Change user password expiry information.
+
+__Usage Case:__
+
+* Changing the maximum password age for user "meqdad" to 90 days.
+
+```bash
+sudo chage -M 90 meqdad
+```
+
+_Output:_
+
+```bash
+The maximum password age for user "meqdad" is set to 90 days.
+```
+
+* Changing the maximum password age for user "meqdad" to 10 days with warning message on the 7th day.
+
+```bash
+sudo chage -I 10 -W 7 meqdad
+```
+
+_Output:_
+
+```bash
+The password for user "meqdad" will expire in 10 days, and a warning will be issued 7 days prior.
+```
+
+* Changing the maximum password age for user "meqdad" to a specific date.
+
+```bash
+sudo chage -E 2024-12-31 meqdad
+```
+
+_Output:_
+
+```bash
+The password for user "meqdad" is set to expire on December 31, 2024.
+```
+
+-------------------------------
