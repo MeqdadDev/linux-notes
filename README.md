@@ -264,7 +264,7 @@ _Output:_
 uid=1000(meqdad) gid=1000(meqdad) groups=1000(meqdad),4(adm),20(dialout),24(cdrom),27(sudo),30(dip),46(plugdev),122(lpadmin),135(lxd),136(sambashare)
 ```
 
-Running `id` command the root user:
+Running `id` command for the root user:
  
 ```bash
 id root
@@ -525,6 +525,42 @@ _Output:_
 
 ```bash
 The password for user "meqdad" is set to expire on December 31, 2024.
+```
+
+-------------------------------
+
+### `find`
+
+* __`find`__ - Search for files and directories in a directory hierarchy.
+
+```bash
+find [directory] [options] [expression]
+```
+
+__Usage Case:__
+
+```bash
+find /home/user -name "*.txt"
+```
+
+_Output:_
+
+```bash
+/home/user/file1.txt
+/home/user/directory/file2.txt
+...
+```
+
+* Removing the modified files for more than 7 days ago.
+
+```bash
+find /var/log -type f -mtime +7 -exec rm {} \;
+```
+
+_Output:_
+
+```bash
+Removes all files in /var/log that were modified more than 7 days ago.
 ```
 
 -------------------------------
