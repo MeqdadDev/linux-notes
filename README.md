@@ -564,3 +564,48 @@ Removes all files in /var/log that were modified more than 7 days ago.
 ```
 
 -------------------------------
+
+### `grep`
+
+* __`grep`__ - Search for patterns in text using regular expressions.
+
+```bash
+grep [options] pattern [files/directories]
+```
+
+__Usage Case:__
+
+```bash
+grep "keyword" file.txt
+```
+
+_Output:_
+
+```bash
+Line containing the keyword in file.txt.
+```
+* Searching for the specified pattern in all files within the given directory and its subdirectories.
+
+```bash
+grep -r "pattern" /path/to/directory
+```
+
+_Output:_
+
+```bash
+Lines containing the pattern in files within the directory and its subdirectories.
+```
+
+* Showing information about Python processes running on the system:
+
+```bash
+ps aux | grep python
+```
+
+_Output:_
+
+```bash
+user     12345  0.0  0.0  1234  5678 ?        S    Jan01   0:00 python script.py
+user     23456  0.0  0.0  1234  5678 ?        S    Jan01   0:00 /usr/bin/python3 another_script.py
+```
+
