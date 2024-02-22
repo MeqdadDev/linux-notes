@@ -1,8 +1,25 @@
 # Linux Notes
 Notes and Resources for Linux OS.
 
+```
+ _        _ _ _   _   _   _   _  __  __
+| |      |__ __| | \ | | | | | | \ \/ /
+| |        | |   |  \| | | | | |  \/\/
+| |____   _| |_  | |\  | | | | |  /\/\
+|______| |_ _ _| |_| \_|  \___/  /_/\_\
+
+```
 ## Linux History
-<history will be added>
+
+Linux was created by Linus Torvalds in 1991 as an open-source operating system kernel. Initially a hobby project, Linux rapidly evolved with contributions from developers worldwide, incorporating features from Unix-like systems and gaining stability.
+
+Throughout the mid-1990s and early 2000s, Linux gained traction in the server market due to its robustness, scalability, and cost-effectiveness. Distributions like Red Hat, Debian, and Slackware emerged, catering to various user needs.
+
+In the late 2000s and early 2010s, Linux expanded into desktop computing and mobile devices. Desktop-oriented distributions such as Ubuntu and Linux Mint gained popularity, while Android, based on the Linux kernel, became the dominant OS for mobile devices globally.
+
+Linux solidified its position in cloud computing, powering infrastructure for major cloud providers like AWS, GCP, and Azure. Its flexibility, performance, and compatibility with virtualization technologies have made it a cornerstone of modern cloud-native architectures.
+
+Today, Linux enjoys widespread popularity across servers, desktops, embedded systems, and cloud computing. Its vibrant open-source community actively contributes to its development and improvement, emphasizing freedom, security, and innovation in the digital infrastructure landscape.
 
 ## Popular Commands
 
