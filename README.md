@@ -609,3 +609,55 @@ user     12345  0.0  0.0  1234  5678 ?        S    Jan01   0:00 python script.py
 user     23456  0.0  0.0  1234  5678 ?        S    Jan01   0:00 /usr/bin/python3 another_script.py
 ```
 
+-------------------------------
+
+### `locate`
+
+* __`locate`__ - Find files by name quickly using a pre-built index of file names.
+
+```bash
+locate [options] [pattern]
+```
+
+__Usage Case:__
+
+```bash
+locate test.txt
+```
+
+_Output:_
+
+```bash
+/home/user/test.txt
+/var/www/html/test.txt
+...
+```
+
+* Searching for files with the ".pdf" extension, ignoring case.
+
+```bash
+locate -i "*.pdf"
+```
+
+_Output:_
+
+```bash
+/home/user/Documents/Document1.pdf
+/home/user/Documents/Document2.PDF
+...
+```
+
+* Find files with ".pdf" extension and filter for those containing "example" in the filename.
+
+```bash
+locate -i "*.pdf" | grep "report"
+```
+
+_Output:_
+
+```bash
+/home/user/Documents/annual_report.pdf
+/home/user/Downloads/example_report.pdf
+...
+```
+
