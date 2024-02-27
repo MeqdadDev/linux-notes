@@ -678,3 +678,49 @@ _Output:_
 ...
 ```
 
+-------------------------------
+
+### `systemctl`
+
+* __`systemctl`__ - Control the systemd system and service manager.
+
+```bash
+systemctl [options] [command] [unit]
+```
+
+__Usage Case:__
+
+```bash
+systemctl start nginx
+```
+
+_Output:_
+
+```bash
+Starts the nginx service.
+```
+
+* To display the status of the sshd service.
+
+```bash
+systemctl status sshd
+```
+
+_Output:_
+
+```bash
+Displays the status of the sshd service.
+```
+
+* To start a service automatically at boot.
+
+```bash
+systemctl enable apache2
+```
+
+_Output:_
+
+```bash
+Enables the apache2 service to start automatically at boot.
+```
+
