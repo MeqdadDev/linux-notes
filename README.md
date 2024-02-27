@@ -724,3 +724,92 @@ _Output:_
 Enables the apache2 service to start automatically at boot.
 ```
 
+-------------------------------
+
+### `ps`
+
+* __`ps`__ - Report a snapshot of current processes.
+
+```bash
+.....
+```
+
+__Usage Case:__
+
+* To display a list of processes running in the current session.
+
+```bash
+ps
+```
+
+_Output:_
+
+```bash
+    PID TTY          TIME CMD
+   5277 pts/1    00:00:00 bash
+   5284 pts/1    00:00:00 ps
+```
+
+* To display a detailed list of all processes, including those owned by other users.
+
+```bash
+ps aux
+```
+
+_Output:_
+
+```bash
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.1  0.1 167164 11740 ?        Ss   21:50   0:01 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    21:50   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        I<   21:50   0:00 [rcu_gp]
+root           4  0.0  0.0      0     0 ?        I<   21:50   0:00 [rcu_par_gp]
+root           5  0.0  0.0      0     0 ?        I<   21:50   0:00 [slub_flushwq]
+root           6  0.0  0.0      0     0 ?        I<   21:50   0:00 [netns]
+...
+...
+root        1115  0.0  0.2 118256 23296 ?        Ssl  21:50   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/
+mosquit+    1122  0.0  0.1  15512  8320 ?        Ss   21:50   0:00 /usr/sbin/mosquitto -c /etc/mosquitto/mosquitto.
+colord      1168  0.0  0.1 245572 13012 ?        Ssl  21:50   0:00 /usr/libexec/colord
+postgres    1214  0.0  0.3 221024 29696 ?        Ss   21:50   0:00 /usr/lib/postgresql/14/bin/
+postgres    1245  0.0  0.1 221136  9232 ?        Ss   21:50   0:00 postgres: 14/main: checkpointer
+```
+
+* To display a full-format listing of all processes with additional information.
+
+```bash
+ps -ef
+```
+
+_Output:_
+
+```bash
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 21:50 ?        00:00:01 /sbin/init splash
+root           2       0  0 21:50 ?        00:00:00 [kthreadd]
+root           3       2  0 21:50 ?        00:00:00 [rcu_gp]
+root           4       2  0 21:50 ?        00:00:00 [rcu_par_gp]
+root           5       2  0 21:50 ?        00:00:00 [slub_flushwq]
+root           6       2  0 21:50 ?        00:00:00 [netns]
+...
+...
+lp          1221    1103  0 21:50 ?        00:00:00 /usr/lib/cups/notifier/dbus dbus://
+rtkit       1241       1  0 21:50 ?        00:00:00 /usr/libexec/rtkit-daemon
+postgres    1245    1214  0 21:50 ?        00:00:00 postgres: 14/main: checkpointer 
+postgres    1246    1214  0 21:50 ?        00:00:00 postgres: 14/main: background writer 
+postgres    1247    1214  0 21:50 ?        00:00:00 postgres: 14/main: walwriter 
+
+```
+
+* To display a full-format listing of all processes with additional information and filters for Python processes.
+
+```bash
+ps -ef | grep python
+```
+
+_Output:_
+
+```bash
+root        1115       1  0 21:50 ?        00:00:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+meqdad      5663    5277  0 22:22 pts/1    00:00:00 grep --color=auto python
+```
